@@ -20,7 +20,7 @@ $raisin-black: hsla(334, 12%, 12%, 1);*/
 /* Body and layout */
 body {
     background-color: hsl(334, 11%, 10%);
-    background-image: url(https://png.pngtree.com/background/20230607/original/pngtree-some-red-roses-are-seen-here-in-a-dark-setting-picture-image_2902794.jpg);
+   /* background-image: url(https://png.pngtree.com/background/20230607/original/pngtree-some-red-roses-are-seen-here-in-a-dark-setting-picture-image_2902794.jpg);*/
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -182,41 +182,41 @@ body {
     margin-top: auto;
 }
 #BL1{
-    background-image: url("../HTML/rsc/70s VHS poster.png");
+    background-image: url("./HTML/rsc/70s VHS poster.png");
     background-size: cover;
     background-position: center;
 }
 #BL2{
-    background-image: url("../HTML/rsc/VHS\ GLITCH\ POSTER.png");
+    background-image: url("./HTML/rsc/VHS\ GLITCH\ POSTER.png");
     background-size: cover;
     background-position: center;
 }
 #BL3{
-    background-image: url("../HTML/rsc/vhs2\ mobile.png");
+    background-image: url("./HTML/rsc/vhs2\ mobile.png");
     background-size: cover;
 }
 #BL4{
-    background-image: url("../HTML/rsc/VHS\ NIGMA\ POSTER.png");
+    background-image: url("./HTML/rsc/VHS\ NIGMA\ POSTER.png");
     background-size: cover;
     background-position: bottom;
 }
 #BL5{
-    background-image: url("../HTML/rsc/WTF\ POSTER.png");
+    background-image: url("./HTML/rsc/WTF\ POSTER.png");
     background-size: cover;
     background-position: right;
 }
 #BL6{
-    background-image: url("../HTML/rsc/WRONG\ VHS.png");
+    background-image: url("./HTML/rsc/WRONG\ VHS.png");
     background-size: cover;
     background-position: bottom;
 }
 #BL7{
-    background-image: url("../HTML/rsc/VHS2\ P.png");
+    background-image: url("./HTML/rsc/VHS2\ P.png");
     background-size: cover;
     background-position: top;
 }
 #BL8{
-    background-image: url("../HTML/rsc/skull-and-flowers-poster.png");
+    background-image: url("./HTML/rsc/skull-and-flowers-poster.png");
     background-size: cover;
     background-position: center;
 }
