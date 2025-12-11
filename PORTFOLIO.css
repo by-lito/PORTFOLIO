@@ -182,41 +182,41 @@ body {
     margin-top: auto;
 }
 #BL1{
-    background-image: url("./HTML/rsc/70s VHS poster.png");
+    background-image: url("rsc/70s%20VHS%20poster.png");
     background-size: cover;
     background-position: center;
 }
 #BL2{
-    background-image: url("./HTML/rsc/VHS\ GLITCH\ POSTER.png");
+    background-image: url("rsc/VHS%20GLITCH%20POSTER.png");
     background-size: cover;
     background-position: center;
 }
 #BL3{
-    background-image: url("./HTML/rsc/vhs2\ mobile.png");
+    background-image: url("rsc/vhs2%20mobile.png");
     background-size: cover;
 }
 #BL4{
-    background-image: url("./HTML/rsc/VHS\ NIGMA\ POSTER.png");
+    background-image: url("rsc/VHS%20NIGMA%20POSTER.png");
     background-size: cover;
     background-position: bottom;
 }
 #BL5{
-    background-image: url("./HTML/rsc/WTF\ POSTER.png");
+    background-image: url("rsc/WTF%20POSTER.png");
     background-size: cover;
     background-position: right;
 }
 #BL6{
-    background-image: url("./HTML/rsc/WRONG\ VHS.png");
+    background-image: url("rsc/WRONG%20VHS.png");
     background-size: cover;
     background-position: bottom;
 }
 #BL7{
-    background-image: url("./HTML/rsc/VHS2\ P.png");
+    background-image: url("rsc/VHS2%20P.png");
     background-size: cover;
     background-position: top;
 }
 #BL8{
-    background-image: url("./HTML/rsc/skull-and-flowers-poster.png");
+    background-image: url("rsc/skull-and-flowers-poster.png");
     background-size: cover;
     background-position: center;
 }
