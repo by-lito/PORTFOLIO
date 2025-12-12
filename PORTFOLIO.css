@@ -276,7 +276,7 @@ transition: ease-in-out 0.5s;
 
 @font-face {
     
-    font-family: 'Franklin';
+    font-family: 'FranklinWeb';
     font-style: normal;
     font-weight: normal;
     src: url('rsc/FranklinGothic.ttf?v=1') format('truetype'),
@@ -290,7 +290,7 @@ transition: ease-in-out 0.5s;
     text-decoration: none;
     font-size: 2vb;
     text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'FranklinWeb';
 }
 
 #CONT{
