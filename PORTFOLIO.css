@@ -334,8 +334,8 @@ border: 1px solid rgba(255, 255, 255, 1);
         font-family: 'ImpactWeb';
         font-style: normal;
         font-weight: normal;
-        src: url('rsc/impact.ttf') format('truetype'),
-        url('rsc/impact.woff') format('woff');
+        src: url('rsc/impact.ttf?v=1') format('truetype'),
+        url('rsc/impact.woff?v=1') format('woff');
         font-display: swap;
         
 }
