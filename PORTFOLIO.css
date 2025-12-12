@@ -274,12 +274,23 @@ transition: ease-in-out 0.5s;
     gap: 3vb;
 }
 
+@font-face {
+    
+    font-family: 'Franklin';
+    font-style: normal;
+    font-weight: normal;
+    src: url('rsc/FranklinGothic.ttf?v=1') format('truetype'),
+    url('rsc/FranklinGothic.woff?v=1') format('woff');
+    font-display: swap;
+    
+}
+
 .navbar a {
     color: hsl(334, 14%, 90%);
     text-decoration: none;
     font-size: 2vb;
     text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin';
 }
 
 #CONT{
