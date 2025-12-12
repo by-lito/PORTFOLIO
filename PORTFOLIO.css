@@ -48,17 +48,17 @@ body {
     margin: 7vb;
   
 }
-.block{
+.block {
     background-color: red;
-    background-size: auto;
-    padding-top: 25vw;
-    padding-bottom: 6vw;
-    border-radius: 1vw;
+    background-size: cover;
+    padding-top: 25vb;  /* maintain large size */
+    padding-bottom: 6vb;
+    border-radius: 1vb; /* default rounded corners */
     text-align: center;
     font-size: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-    transition: ease-in-out 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s, border-radius 0.5s;
+    overflow: hidden; /* prevent content spill when rounded */
 }
 .block .content {
     background-color: rgba(0, 0, 0, 0.7); /* Optional: dark background for text visibility */
@@ -222,12 +222,10 @@ body {
 }
 
 
-.block:hover{
-    transform: scale(1.05);
-    transform: translateY(-2vw);
+.block:hover {
+    transform: scale(1.05) translateY(-2vb);
+    border-radius: 50%; /* perfect circle visually */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    transition: ease-in-out 0.5s;
     cursor: cell;
 }
 .block:hover + .background{
@@ -273,7 +271,7 @@ transition: ease-in-out 0.5s;
 /* Mobile adjustment */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 2vw;
     }
