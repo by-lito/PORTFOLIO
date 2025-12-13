@@ -21,7 +21,8 @@ $raisin-black: hsla(334, 12%, 12%, 1);*/
 body {
     background-color: hsl(334, 11%, 10%);
    /* background-image: url(https://png.pngtree.com/background/20230607/original/pngtree-some-red-roses-are-seen-here-in-a-dark-setting-picture-image_2902794.jpg);*/
-    background-size: cover;
+   /*background-image:url("rsc/cshino.png");*/ 
+   background-size: cover;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -39,6 +40,12 @@ body {
 }
 #BACKGROUND #MT3{
     animation: moveDiagonal 20s linear infinite;
+}
+
+.project-container,
+.block {
+    position: relative;
+    z-index: 1;
 }
 
 .project-container{
@@ -267,6 +274,11 @@ body {
     background-position: center;
 }
 
+body:has(.block:hover) .background {
+    background-color: rgba(0,0,0,0.25);
+    filter: blur(2vb);
+    -webkit-backdrop-filter: blur(1.3vb);
+}
 
 .block:hover{
     transform: scale(1.05);
@@ -276,11 +288,7 @@ body {
     transition: ease-in-out 0.5s;
     cursor: cell;
 }
-.block:hover + .background{
-    background-color: rgba(0, 0, 0, 0.205);
-    backdrop-filter: blur(2vb);
--webkit-backdrop-filter: blur(1.3vb);
-}
+
 .block:hover .content{
 visibility: hidden;
 opacity: 0;
@@ -293,11 +301,11 @@ transition: ease-in-out 0.5s;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0,);
+    background-color: rgba(0, 0, 0,0);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    z-index: 0;
     transition: backdrop-filter 0.3s ease-in-out;
     
 }
@@ -311,9 +319,7 @@ transition: ease-in-out 0.5s;
     position: static;
     top: 0;
     width: 100%;
-
-
-    
+    z-index: 2;
 }
 
 /* Mobile adjustment */
@@ -393,7 +399,6 @@ transition: ease-in-out 0.5s;
     flex-grow: 1;
     gap: 5vb;
     margin-top: 5vb; /* Space below navbar */
-    
 }
 /* Card-like button styling */
 .card-button {
@@ -411,6 +416,8 @@ border: 1px solid rgba(255, 255, 255, 1);
     font-size: 2.5vb;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -454,13 +461,14 @@ border: 1px solid rgba(255, 255, 255, 1);
 -webkit-backdrop-filter: blur(1.3vb);
 } 
 
-.card-button:hover + .background .moving-text {
+.card-button:hover + .background .moving-text { 
     visibility: visible;
     opacity: 1;
     transition: 1s ease-in-out
   }
 
   .background .moving-text {
+    
     visibility: hidden;
     opacity: 0;
     transition: 1s ease-in-out, viibility 0s linear 1s;
