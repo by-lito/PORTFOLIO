@@ -14,35 +14,35 @@ function expandBlock(blockId) {
     switch(block){
         case BL1:
              expandedTitle.textContent= "VHS 70s"
-             expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n a great noseq "
+             expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n "
              break;
         case BL2:
             expandedTitle.textContent= "VHS GLITCH"
-            expandedDescription.textContent="NGNGNG"
+            expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n"
             break;
         case BL3:
             expandedTitle.textContent= "VHS ART ADD POSTER"
-            expandedDescription.textContent="NGNGNG"
+            expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n"
             break;
         case BL4:
             expandedTitle.textContent= "VHS-2 ENIGMA"
-            expandedDescription.textContent="NGNGNG"
+            expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n"
             break;
         case BL5:
             expandedTitle.textContent= "WTF FILM POSTER"
-            expandedDescription.textContent="NGNGNG"
+            expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n"
             break;
         case BL6:
             expandedTitle.textContent= "WHAT COULD GO WRONG POSTER"
-            expandedDescription.textContent="NGNGNG"
+            expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n"
             break;
         case BL7:
             expandedTitle.textContent= "VHS2 OLD MAGAZINE"
-            expandedDescription.textContent="NGNGNG"
+            expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n"
             break;
         case BL8:
             expandedTitle.textContent= "BEAUTY IS PAIN WALLPAPER"
-            expandedDescription.textContent="NGNGNG"
+            expandedDescription.textContent="promotional VHS 2 mobile wallpaper \n"
             break;
     }
 }

@@ -45,14 +45,16 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1vb, 37vb)); /* Responsive */
     gap: 10vb;
-    margin: 7vb;
+    justify-content: center;
+    margin-top: 7vw;
+    margin-bottom: 7vw;
   
 }
 .block{
     background-color: red;
     background-size: auto;
-    padding-top: 25vb;
-    padding-bottom: 6vb;
+    width: 37vb; /* or your desired size */
+    aspect-ratio: 1 / 1; /* keeps square shape */
     border-radius: 1vb;
     text-align: center;
     font-size: 1rem;
@@ -67,7 +69,8 @@ body {
     width: 100%;
     text-align: left;
     visibility: visible;
-    font-size: 2vb;
+    font-size: 1.25rem;
+    margin-top: 15.5rem;
 }
 .project-container > .block:nth-child(n):not(:nth-last-child(-n+1)) {
     margin-right: 0;
@@ -167,12 +170,6 @@ body {
     transform: translateY(-5px);
     transition: ease-in-out 0.1s;
 }
-
-
-
-
-
-
 
 
 
