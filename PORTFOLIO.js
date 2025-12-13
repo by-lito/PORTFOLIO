@@ -2,7 +2,7 @@ function expandBlock(id) {
     const block = document.getElementById(id);
     const bg = getComputedStyle(block).backgroundImage;
 
-    const imgUrl = bg.slice(5, -2); // extract url("...")
+    const imgUrl = bg.slice(5, -2);
 
     document.getElementById('expandedImage').src = imgUrl;
     document.getElementById('expandedTitle').textContent =

@@ -149,6 +149,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10%;
+    
 }
 
 .close-btn {
