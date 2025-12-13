@@ -19,6 +19,7 @@ body{
     background-color: var(--clr1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .background {
     position: fixed;
     top: 0;
