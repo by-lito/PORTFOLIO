@@ -48,8 +48,20 @@ body{
 #BACKGROUND #MT3{
     animation: moveDiagonal 20s linear infinite;
 }
-.moving-text{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+@font-face {
+
+    font-family: 'ImpactWeb';
+    font-style: normal;
+    font-weight: normal;
+    src: url('rsc/impact.ttf?v=1') format('truetype'),
+        url('rsc/impact.woff?v=1') format('woff');
+    font-display: swap;
+
+}
+
+.moving-text {
+    font-family: 'ImpactWeb', Impact, sans-serif;
     font-size: 20vb;
     display: flex;
     position: absolute;
