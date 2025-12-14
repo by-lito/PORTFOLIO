@@ -20,25 +20,29 @@ $raisin-black: hsla(334, 12%, 12%, 1);*/
 /* Body and layout */
 body {
     background-color: hsl(334, 11%, 10%);
-   /* background-image: url(https://png.pngtree.com/background/20230607/original/pngtree-some-red-roses-are-seen-here-in-a-dark-setting-picture-image_2902794.jpg);*/
-   /*background-image:url("rsc/cshino.png");*/ 
-   background-size: cover;
+    /* background-image: url(https://png.pngtree.com/background/20230607/original/pngtree-some-red-roses-are-seen-here-in-a-dark-setting-picture-image_2902794.jpg);*/
+    /*background-image:url("rsc/cshino.png");*/
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
-#BACKGROUNDBH{
+
+#BACKGROUNDBH {
     backdrop-filter: blur(2vb);
--webkit-backdrop-filter: blur(1.3vb);
+    -webkit-backdrop-filter: blur(1.3vb);
 }
+
 #BACKGROUND .moving-text {
     visibility: visible;
     opacity: 1;
-  }
-#BACKGROUND #MT2{
+}
+
+#BACKGROUND #MT2 {
     animation: moveDiagonal 20s linear reverse infinite;
 }
-#BACKGROUND #MT3{
+
+#BACKGROUND #MT3 {
     animation: moveDiagonal 20s linear infinite;
 }
 
@@ -48,19 +52,22 @@ body {
     z-index: 1;
 }
 
-.project-container{
+.project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1vb, 37vb)); /* Responsive */
+    grid-template-columns: repeat(auto-fit, minmax(1vb, 37vb));
+    /* Responsive */
     gap: 10vb;
     justify-content: center;
     margin-top: 3vw;
     margin-bottom: 4vw;
-  
+
 }
-.block{
+
+.block {
     background-color: red;
     background-size: auto;
-    width: min(37vb, 90vw); /* shrinks on small screens */
+    width: min(37vb, 90vw);
+    /* shrinks on small screens */
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
@@ -73,9 +80,12 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
     transition: ease-in-out 0.2s;
 }
+
 .block .content {
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: dark background for text visibility */
-    color: white; /* Make text visible on dark background */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Optional: dark background for text visibility */
+    color: white;
+    /* Make text visible on dark background */
     padding: 1vb;
     width: 100%;
     text-align: left;
@@ -97,12 +107,12 @@ body {
 
 
 
-.project-container > .block:nth-child(n):not(:nth-last-child(-n+1)) {
+.project-container>.block:nth-child(n):not(:nth-last-child(-n+1)) {
     margin-right: 0;
 }
 
 /* Ensure the outermost elements respect the container margin */
-.project-container > .block:first-child {
+.project-container>.block:first-child {
     margin-left: 0;
 }
 
@@ -114,11 +124,12 @@ body {
 .expanded-view {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5vb);
     z-index: 1000;
     display: none;
-    overflow: auto;            /* 🔑 WHOLE MODAL SCROLLS */
+    overflow: auto;
+    /* 🔑 WHOLE MODAL SCROLLS */
     padding: 4vw;
 }
 
@@ -132,9 +143,10 @@ body {
     display: flex;
     gap: 4vb;
     margin: auto;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     border-radius: 2vb;
-    width: fit-content;        /* 🔑 IMAGE DEFINES SIZE */
+    width: fit-content;
+    /* 🔑 IMAGE DEFINES SIZE */
     max-width: 100%;
 }
 
@@ -145,7 +157,8 @@ body {
     max-height: 90vh;
     width: auto;
     height: auto;
-    object-fit: contain;       /* 🔑 SHOW FULL IMAGE */
+    object-fit: contain;
+    /* 🔑 SHOW FULL IMAGE */
     border-radius: 1vb;
 }
 
@@ -157,7 +170,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 10%;
-    
+
 }
 
 .close-btn {
@@ -173,18 +186,18 @@ body {
     justify-content: center;
 
     line-height: 0.9;
-    
+
     background-color: hsl(67, 100%, 50%);
     color: black;
 
     font-size: 2rem;
-    
+
 
     border: none;
     border-radius: 50%;
 
     cursor: pointer;
-    transition: 
+    transition:
         background-color 0.2s ease,
         color 0.2s ease,
         transform 0.1s ease;
@@ -192,7 +205,8 @@ body {
 
 /* Hover state */
 .close-btn:hover {
-    background-color: hsl(1, 79%, 48%); /* red */
+    background-color: hsl(1, 79%, 48%);
+    /* red */
     color: white;
     transform: scale(1.1);
 }
@@ -230,57 +244,65 @@ body {
 
 
 
-.desc{
+.desc {
     font-size: 1vb;
     margin-top: auto;
 }
-#BL1{
+
+#BL1 {
     background-image: url("rsc/70s_VHS_poster.png");
     background-size: cover;
     background-position: center;
 }
-#BL2{
+
+#BL2 {
     background-image: url("rsc/VHS_GLITCH_POSTER.png");
     background-size: cover;
     background-position: center;
 }
-#BL3{
+
+#BL3 {
     background-image: url("rsc/vhs2_mobile.png");
     background-size: cover;
 }
-#BL4{
+
+#BL4 {
     background-image: url("rsc/VHS_NIGMA_POSTER.png");
     background-size: cover;
     background-position: bottom;
 }
-#BL5{
+
+#BL5 {
     background-image: url("rsc/WTF_POSTER.png");
     background-size: cover;
     background-position: right;
 }
-#BL6{
+
+#BL6 {
     background-image: url("rsc/WRONG_VHS.png");
     background-size: cover;
     background-position: bottom;
 }
-#BL7{
+
+#BL7 {
     background-image: url("rsc/VHS2_P.png");
     background-size: cover;
     background-position: top;
 }
-#BL8{
+
+#BL8 {
     background-image: url("rsc/skull_and_flowers_poster.png");
     background-size: cover;
     background-position: center;
 }
 
 body:has(.block:hover) .background {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     filter: blur(2vb);
     -webkit-backdrop-filter: blur(1.3vb);
 }
 
-.block:hover{
+.block:hover {
     transform: scale(1.05);
     transform: translateY(-2vb);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
@@ -289,10 +311,10 @@ body:has(.block:hover) .background {
     cursor: cell;
 }
 
-.block:hover .content{
-visibility: hidden;
-opacity: 0;
-transition: ease-in-out 0.5s;
+.block:hover .content {
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
 }
 
 .background {
@@ -301,19 +323,19 @@ transition: ease-in-out 0.5s;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0,0);
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
     transition: backdrop-filter 0.3s ease-in-out;
-    
+
 }
 
 /* Navbar styles */
 .navbar {
     background-color: rgba(0, 0, 0, );
-    border-bottom: 0.01vb solid hsl(334, 14%, 90%,0);
+    border-bottom: 0.01vb solid hsl(334, 14%, 90%, 0);
     background-blend-mode: color luminosity 100% 0%;
     padding: 2.5vb;
     position: static;
@@ -334,20 +356,21 @@ transition: ease-in-out 0.5s;
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* instead of center */
+    justify-content: center;
+    /* instead of center */
     align-items: center;
     gap: 6vb;
 }
 
 @font-face {
-    
+
     font-family: 'FranklinWeb';
     font-style: normal;
     font-weight: normal;
     src: url('rsc/FranklinGothic.ttf?v=1') format('truetype'),
-    url('rsc/FranklinGothic.woff?v=1') format('woff');
+        url('rsc/FranklinGothic.woff?v=1') format('woff');
     font-display: swap;
-    
+
 }
 
 .navbar a {
@@ -355,18 +378,19 @@ transition: ease-in-out 0.5s;
     text-decoration: none;
     font-size: 2vb;
     text-transform: uppercase;
-    font-family: 'FranklinWeb', 'Franklin Gothic Medium',sans-serif;
+    font-family: 'FranklinWeb', 'Franklin Gothic Medium', sans-serif;
 }
 
-#CONT{
+#CONT {
     background-color: hsl(1, 79%, 48%);
-    padding: 0.6em 1.2em; /* relative to text size */
+    padding: 0.6em 1.2em;
+    /* relative to text size */
     border-radius: 2em;
     font-size: clamp(0.9rem, 2vb, 1.2rem);
     white-space: nowrap;
 }
 
-#CONT:hover{
+#CONT:hover {
     background-color: hsl(334, 14%, 90%);
     color: black;
 }
@@ -398,14 +422,16 @@ transition: ease-in-out 0.5s;
     align-items: center;
     flex-grow: 1;
     gap: 5vb;
-    margin-top: 5vb; /* Space below navbar */
+    margin-top: 5vb;
+    /* Space below navbar */
 }
+
 /* Card-like button styling */
 .card-button {
-    box-shadow: 0 1cap 10vb rgb(0, 0, 0,1);
-backdrop-filter: blur(1vb);
--webkit-backdrop-filter: blur(20px);
-border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 1cap 10vb rgb(0, 0, 0, 1);
+    backdrop-filter: blur(1vb);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
     font-family: 'Roboto Serif';
     background-color: rgba(255, 255, 255, 0.014);
     border: none;
@@ -422,18 +448,18 @@ border: 1px solid rgba(255, 255, 255, 1);
 
 
 @font-face {
-    
-        font-family: 'ImpactWeb';
-        font-style: normal;
-        font-weight: normal;
-        src: url('rsc/impact.ttf?v=1') format('truetype'),
+
+    font-family: 'ImpactWeb';
+    font-style: normal;
+    font-weight: normal;
+    src: url('rsc/impact.ttf?v=1') format('truetype'),
         url('rsc/impact.woff?v=1') format('woff');
-        font-display: swap;
-        
+    font-display: swap;
+
 }
 
-.moving-text{
-    font-family:'ImpactWeb', Impact, sans-serif;
+.moving-text {
+    font-family: 'ImpactWeb', Impact, sans-serif;
     font-size: 20vb;
     display: flex;
     position: absolute;
@@ -444,54 +470,62 @@ border: 1px solid rgba(255, 255, 255, 1);
 
 @keyframes moveDiagonal {
     0% {
-      transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%);
     }
+
     100% {
-      transform: translate(10%, 10%
-    );
+        transform: translate(10%, 10%);
     }
-}  
+}
+
 .card-button:hover {
-    transform: translateY(-20px); 
+    transform: translateY(-20px);
     color: rgb(0, 0, 0);
 }
-.card-button:hover + .background {
+
+.card-button:hover+.background {
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2vb);
--webkit-backdrop-filter: blur(1.3vb);
-} 
+    -webkit-backdrop-filter: blur(1.3vb);
+}
 
-.card-button:hover + .background .moving-text { 
+.card-button:hover+.background .moving-text {
     visibility: visible;
     opacity: 1;
     transition: 1s ease-in-out
-  }
+}
 
-  .background .moving-text {
-    
+.background .moving-text {
+
     visibility: hidden;
     opacity: 0;
     transition: 1s ease-in-out, viibility 0s linear 1s;
-  }
-  
-#B1:hover{
+}
+
+#B1:hover {
     background-color: hsl(1, 79%, 48%);
 }
-#B2:hover{
+
+#B2:hover {
     background-color: hsl(63, 45%, 60%);
 }
-#B3:hover{
+
+#B3:hover {
     background-color: hsl(125, 11%, 61%);
 }
-#B3:hover + div.moving-text{
-    color: hsl(125, 11%, 61%,1);
+
+#B3:hover+div.moving-text {
+    color: hsl(125, 11%, 61%, 1);
 }
-#B4:hover{
+
+#B4:hover {
     background-color: hsl(139, 13%, 44%);
 }
-#B5:hover{
+
+#B5:hover {
     background-color: hsl(153, 16%, 27%);
 }
+
 .card-button:focus {
     outline: none;
 }
@@ -502,7 +536,8 @@ border: 1px solid rgba(255, 255, 255, 1);
         flex-direction: column;
     }
 }
-footer{
+
+footer {
     font-family: Arial, Helvetica, sans-serif;
     color: hsl(334, 14%, 90%);
     padding: 20px 20px;
