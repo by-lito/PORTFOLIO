@@ -622,6 +622,14 @@ footer {
     z-index: 10;
 }
 
+.carta .title {
+    /* Mínimo 1.5rem, tamaño ideal 5vw, máximo 2.5rem */
+    font-size: clamp(1.5rem, 5vw, 2.5rem); 
+    word-wrap: break-word; /* Fuerza el salto si la palabra es eterna */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
 
 .carta2{
     margin-bottom: 2rem;
