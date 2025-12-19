@@ -83,6 +83,7 @@ filter: contrast(600%);
     margin-top: 3vw;
     margin-bottom: 4vw;
     z-index: 4;
+    ma
 
 }
 
@@ -168,8 +169,6 @@ filter: contrast(600%);
     margin: auto;
     background: rgba(0, 0, 0, 0.45);
     border-radius: 2vb;
-    width: fit-content;
-    /* 🔑 IMAGE DEFINES SIZE */
     max-width: 100%;
 }
 
@@ -188,12 +187,25 @@ filter: contrast(600%);
 /* ===== Text ===== */
 .expanded-text {
     color: white;
-    max-width: 40ch;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     margin: 10%;
 
+
+}
+
+#expandedTitle {
+font-family: 'ImpactWeb',Impact, sans-serif;
+font-size: 3rem;
+
+}
+
+#expandedDescription {
+    font-family:'Courier New', Courier, monospace;
+    padding: 2rem;
+    
 }
 
 .close-btn {
@@ -247,6 +259,7 @@ filter: contrast(600%);
     .expanded-content {
         flex-direction: column;
         align-items: center;
+        width: fit-content;
     }
 
     .expanded-text {
@@ -397,7 +410,7 @@ body:has(.block:hover) .background {
 .navbar a {
     color: hsl(334, 14%, 90%);
     text-decoration: none;
-    font-size: 2vb;
+    font-size: 1rem;
     text-transform: uppercase;
     font-family: 'FranklinWeb', 'Franklin Gothic Medium', sans-serif;
 }
@@ -405,9 +418,8 @@ body:has(.block:hover) .background {
 #CONT {
     background-color: hsl(1, 79%, 48%);
     padding: 0.6em 1.2em;
-    /* relative to text size */
     border-radius: 2em;
-    font-size: clamp(0.9rem, 2vb, 1.2rem);
+    font-size: 1rem
     white-space: nowrap;
 }
 
@@ -415,6 +427,15 @@ body:has(.block:hover) .background {
     background-color: hsl(334, 14%, 90%);
     color: black;
 }
+
+.mobile-only { display: none; }
+.desktop-only { display: inline-block; }
+
+@media (max-width: 768px) {
+    .mobile-only { display: inline-block; }
+    .desktop-only { display: none; }
+}
+
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -443,7 +464,7 @@ body:has(.block:hover) .background {
     align-items: center;
     flex-grow: 1;
     gap: 5vb;
-    margin: auto;
+    margin:4vb;
     /* Space below navbar */
 }
 
@@ -728,15 +749,26 @@ footer {
         flex-direction: row;
         justify-content: center;
     }
+    .download-label{
+        margin-left: 1rem;
+    }
 }
 
 /* Mobile: label on TOP */
 @media (max-width: 768px) {
     .download-wrapper {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding-top: 1rem;
+        border-radius: 2rem;
+    }
+
+    .download-label {
+        margin: 0;
     }
 }
+
 
 
 
